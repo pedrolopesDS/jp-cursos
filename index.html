@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
+  <title>JP Penha Cursos — Capacitação em Gestão Pública</title>
+  <meta name="description" content="Cursos presenciais e seminários de capacitação para servidores e gestores públicos em todo o Brasil." />
+  <meta property="og:title" content="JP Penha Cursos — Capacitação em Gestão Pública" />
+  <meta property="og:description" content="Cursos presenciais e seminários de capacitação para servidores e gestores públicos." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">JP<span class="logo-highlight">CURSOS</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a href="#inscricao" class="btn btn-accent btn-sm">Inscreva-se</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      <div class="hero-overlay"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge badge-accent reveal">Qualidade &amp; Excelência</span>
+        <h1 class="reveal">Capacitação em <span class="text-highlight">Gestão Pública</span> de Alto Nível</h1>
+        <p class="reveal">Cursos presenciais e seminários para servidores e gestores públicos em todo o Brasil. Transforme sua carreira com os melhores especialistas.</p>
+        <div class="hero-buttons reveal">
+          <a href="#cursos" class="btn btn-accent">Ver Cursos</a>
+          <a href="#sobre" class="btn btn-outline-light">Saiba Mais</a>
+        </div>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong>15+</strong><span>Anos de experiência</span></div>
+        <div class="stat"><strong>8.200+</strong><span>Alunos capacitados</span></div>
+        <div class="stat"><strong>120+</strong><span>Cursos realizados</span></div>
+        <div class="stat"><strong>27</strong><span>Estados atendidos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cursos" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Agenda 2026</span>
+        <h2>Próximos Cursos</h2>
+        <p>Confira nossa programação de cursos presenciais em diversas cidades do Brasil.</p>
+      </div>
+      
+      <div class="courses-grid" id="grid-cursos">
+        </div>
+
+    </div>
+  </section>
+
+<section id="galeria" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Galeria</span>
+        <h2>Momentos dos Nossos Cursos</h2>
+        <p>Confira os registros dos nossos últimos cursos e seminários pelo Brasil.</p>
+      </div>
+      
+      <div class="galeria-grid" id="grid-galeria">
+        </div>
+      <div class="galeria-actions" id="galeria-actions" style="text-align: center; margin-top: 3rem; display: none;">
+        <button id="btn-toggle-galeria" class="btn btn-outline-light" onclick="toggleGaleria()" style="color: var(--primary); border-color: var(--primary);">Ver mais fotos ↓</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <span class="section-label">Sobre nós</span>
+          <h2>Referência em capacitação para a Gestão Pública</h2>
+          <p class="about-lead">A JP Penha Cursos é uma empresa especializada em consultoria, treinamento e capacitação profissional voltada para a gestão pública. Atuamos com excelência, oferecendo cursos, seminários e eventos por todo o Brasil.</p>
+          <p>Nossa equipe é formada por especialistas, com vasta experiência prática em administração pública, licitações, contratos, planejamento e fiscalização.</p>
+          <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+        </div>
+        <div class="about-features reveal-right">
+          <div class="feature-card">
+            <div class="feature-icon icon-accent">📖</div>
+            <h3>Cursos Presenciais</h3>
+            <p>Capacitação prática com os melhores professores</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon icon-accent">👥</div>
+            <h3>Seminários</h3>
+            <p>Eventos de grande porte em todo o Brasil</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon icon-accent">🏆</div>
+            <h3>Certificação</h3>
+            <p>Certificado que comprova sua capacitação profissional</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon icon-accent">🏛️</div>
+            <h3>In Company</h3>
+            <p>Treinamentos personalizados para sua instituição</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Depoimentos</span>
+        <h2>O que dizem nossos alunos</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Os cursos da JP Penha transformaram a forma como gerenciamos os recursos do nosso município. Conteúdo extremamente prático e relevante.</p>
+          <div class="testimonial-author">
+            <div class="avatar">MO</div>
+            <div><strong>Márcia Oliveira</strong><span>Secretária de Administração — Londrina, PR</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Excelente didática e profundidade nos temas abordados. Recomendo para todos os servidores que buscam atualização profissional.</p>
+          <div class="testimonial-author">
+            <div class="avatar">RN</div>
+            <div><strong>Roberto Nascimento</strong><span>Diretor de Licitações — Goiânia, GO</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">"</div>
+          <p>Participei do seminário em Brasília e saí com ferramentas concretas para melhorar a captação de recursos federais no nosso município.</p>
+          <div class="testimonial-author">
+            <div class="avatar">FL</div>
+            <div><strong>Fernanda Lima</strong><span>Coordenadora de Projetos — Cuiabá, MT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inscricao" class="section">
+    <div class="container">
+      <div class="cta-box reveal">
+        <div class="cta-decor-1"></div>
+        <div class="cta-decor-2"></div>
+        <div class="cta-content">
+          <h2>Faça já sua inscrição</h2>
+          <p>Garanta sua vaga nos próximos cursos e seminários. Turmas limitadas para garantir a qualidade do aprendizado.</p>
+          <div class="cta-buttons">
+            <a href="https://wa.me/5514988163469" target="_blank" rel="noopener noreferrer" class="btn btn-accent">Inscrever-se Agora</a>
+            <a href="#contato" class="btn btn-outline-light">Tirar Dúvidas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato" class="footer">
+    <div class="container">
+      <div class="footer-grid reveal">
+        <div>
+          <span class="logo">JP<span class="logo-highlight">CURSOS</span></span>
+          <p class="footer-desc">Consultoria, treinamento e capacitação profissional em gestão pública.</p>
+        </div>
+        <div>
+          <h4>Links Rápidos</h4>
+          <a href="#inicio">Início</a>
+          <a href="#cursos">Cursos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Depoimentos</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <p>📞 (43) 9116-1210</p>
+          <p>✉️ contato@joaopaulopenha.com</p>
+          <p>🌐 www.jppenhacursos.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 JP Penha Cursos. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+<div class="modal-overlay" id="cursoModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="fecharModal()">×</button>
+      
+      <div class="modal-prof-header" id="modalProfHeader" style="display: none;">
+        <img src="" alt="Professor" class="modal-img-left" id="modalImg">
+        
+        <div class="modal-prof-text">
+          <span class="modal-label">Professor(a)</span>
+          <h3 id="modalNomeProf">Nome do Professor</h3>
+          <p id="modalBioProf">Breve texto sobre o professor...</p>
+        </div>
+      </div>
+      
+      <hr class="modal-divider" id="modalDivider" style="display: none;">
+      
+      <h4 id="modalTitulo" style="font-family: var(--font-display); color: var(--text);">Título do Curso</h4>
+      
+      <div class="modal-buttons">
+        <a href="#" id="modalPdf" target="_blank" class="btn btn-outline-light" style="color: var(--primary); border-color: var(--primary);">Abrir Ementa</a>
+        <a href="#" id="modalLink" target="_blank" class="btn btn-accent">Inscreva-se</a>
+      </div>
+    </div>
+  </div>
+
+<div class="modal-overlay" id="lightboxOverlay" style="z-index: 1200;">
+    <div class="modal-content lightbox-content" style="position: relative;"> <button class="modal-close" onclick="fecharLightbox()" style="color: #ffffff;">×</button>
+      
+      <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" onclick="navegarGaleria(-1)"></button>
+      
+      <img src="" id="lightboxImg" alt="" class="lightbox-img" loading="lazy">
+      <h3 id="lightboxTitulo" class="lightbox-titulo">Título da Imagem</h3>
+      
+      <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" onclick="navegarGaleria(1)"></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
