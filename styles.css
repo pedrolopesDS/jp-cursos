@@ -57,9 +57,11 @@ a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
 /* ========== Utility ========== */
+/* ========== Utility ========== */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
 
 .text-highlight { color: var(--highlight); }
+.text-accent { color: var(--accent); }
 
 .section { padding: 6rem 0; }
 .section-alt { background: var(--section-alt); }
