@@ -61,8 +61,14 @@ img { max-width: 100%; display: block; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
 
 .text-highlight { color: var(--highlight); }
-.text-accent { color: var(--accent); }
-
+.text-gradient {
+  background: linear-gradient(to right, var(--primary), var(--accent)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: transparent !important;
+  display: inline-block; /* Ajuda o navegador a calcular o degradê certinho na palavra */
+}
 .section { padding: 6rem 0; }
 .section-alt { background: var(--section-alt); }
 
