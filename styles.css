@@ -699,3 +699,13 @@ img { max-width: 100%; display: block; }
   .lightbox-prev { left: 0.5rem; }
   .lightbox-next { right: 0.5rem; }
 }
+
+/* ========== MÁGICA DO TEXTO DEGRADÊ BLINDADO ========== */
+.text-gradient {
+  background: linear-gradient(to right, var(--primary) 0%, var(--accent) 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important;
+}
